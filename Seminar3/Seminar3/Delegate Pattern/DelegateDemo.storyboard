@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qza-OY-Qxh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="Y6W-OH-hqX" customClass="FirstViewController" customModule="Seminar3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smK-QH-vUv">
+                                <rect key="frame" x="20" y="244" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiK-FH-3tK">
+                                <rect key="frame" x="107" y="330" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Nbi-El-voe"/>
+                                    <constraint firstAttribute="width" constant="200" id="RLE-Na-nvk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="화면 전환 버튼"/>
+                                <connections>
+                                    <action selector="nextButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nDC-7j-pfX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="데이터 전달 실습(Delegate)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-Y9-ViF">
+                                <rect key="frame" x="41.5" y="108" width="331" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="smK-QH-vUv" secondAttribute="trailing" constant="20" id="KYF-w8-icG"/>
+                            <constraint firstItem="ujW-Y9-ViF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="MyF-aL-dQ0"/>
+                            <constraint firstItem="ujW-Y9-ViF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Z58-oH-mqg"/>
+                            <constraint firstItem="QiK-FH-3tK" firstAttribute="top" secondItem="smK-QH-vUv" secondAttribute="bottom" constant="50" id="mO9-lR-CwI"/>
+                            <constraint firstItem="smK-QH-vUv" firstAttribute="top" secondItem="ujW-Y9-ViF" secondAttribute="bottom" constant="100" id="nXw-gA-241"/>
+                            <constraint firstItem="QiK-FH-3tK" firstAttribute="centerX" secondItem="smK-QH-vUv" secondAttribute="centerX" id="qlQ-XF-p3j"/>
+                            <constraint firstItem="smK-QH-vUv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="zAN-Ou-6ZY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="INp-mq-gyZ"/>
+                    <connections>
+                        <outlet property="dataLabel" destination="smK-QH-vUv" id="Qfy-mi-Kyi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="116.51785714285714"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="3gp-Hl-6MQ">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="iYW-Cc-bQQ" customClass="SecondViewController" customModule="Seminar3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAe-Ra-yCx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전달할 데이터를 넣어주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lMz-ih-TrC">
+                                <rect key="frame" x="20" y="194" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K0W-hU-vvq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFy-xC-7QQ">
+                                <rect key="frame" x="20" y="344" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AWL-tN-EF7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="데이터 전달 버튼(B-&gt;A)"/>
+                                <connections>
+                                    <action selector="sendDataButtonDidTap:" destination="iYW-Cc-bQQ" eventType="touchUpInside" id="AQv-C3-azJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JsU-Ww-cPK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mFy-xC-7QQ" firstAttribute="leading" secondItem="JsU-Ww-cPK" secondAttribute="leading" constant="20" id="26Z-Hi-g7t"/>
+                            <constraint firstItem="lMz-ih-TrC" firstAttribute="top" secondItem="JsU-Ww-cPK" secondAttribute="top" constant="150" id="JRl-c9-okM"/>
+                            <constraint firstItem="JsU-Ww-cPK" firstAttribute="trailing" secondItem="lMz-ih-TrC" secondAttribute="trailing" constant="20" id="UNW-NV-as1"/>
+                            <constraint firstItem="lMz-ih-TrC" firstAttribute="leading" secondItem="JsU-Ww-cPK" secondAttribute="leading" constant="20" id="mu5-kZ-2Qv"/>
+                            <constraint firstItem="mFy-xC-7QQ" firstAttribute="top" secondItem="lMz-ih-TrC" secondAttribute="bottom" constant="100" id="rKx-r2-XXv"/>
+                            <constraint firstItem="JsU-Ww-cPK" firstAttribute="trailing" secondItem="mFy-xC-7QQ" secondAttribute="trailing" constant="20" id="t9D-i1-5dA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataTextField" destination="lMz-ih-TrC" id="M9N-iZ-mkj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymb-lF-fxZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1928.985507246377" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uhv-Bx-Yy5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qza-OY-Qxh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OZw-HX-Qof">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="fne-ur-H75"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91W-rU-8Ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
