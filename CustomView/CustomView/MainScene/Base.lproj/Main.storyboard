@@ -49,12 +49,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메인 화면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-kZ-P6b">
+                                <rect key="frame" x="159" y="64" width="96" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Q5p-kZ-P6b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C1Y-M9-0uj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OpK-tp-r4c" secondAttribute="trailing" constant="20" id="EYO-G2-O8H"/>
                             <constraint firstItem="OpK-tp-r4c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZYM-Ha-z2h"/>
+                            <constraint firstItem="Q5p-kZ-P6b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dZy-79-hqk"/>
                             <constraint firstItem="OpK-tp-r4c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kIL-3P-c5L"/>
                         </constraints>
                     </view>
