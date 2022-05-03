@@ -34,6 +34,12 @@ extension MainViewController {
     // MARK: - 바텀시트
     @IBAction func bottomSheetButtonDidTap(_ sender: UIButton) {
         print("바텀시트")
+        let bottomSheet = BottomSheet(nibName: "BottomSheet", bundle: nil)
+        bottomSheet.modalTransitionStyle = .crossDissolve
+        bottomSheet.modalPresentationStyle = .overFullScreen
+        present(bottomSheet, animated: false) {
+            bottomSheet.showWithAnimation()
+        }
     }
     
     // MARK: - 탭 페이저

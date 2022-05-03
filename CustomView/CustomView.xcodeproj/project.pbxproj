@@ -126,6 +126,7 @@
 		BD64464C28203576008E7EC0 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				BD64466028204C9D008E7EC0 /* Cells */,
 				BD644652282035F0008E7EC0 /* BottomSheet.swift */,
 				BD644653282035F0008E7EC0 /* BottomSheet.xib */,
 			);
@@ -139,6 +140,13 @@
 				BD64465C282036EC008E7EC0 /* TabPager.storyboard */,
 			);
 			path = TabPager;
+			sourceTree = "<group>";
+		};
+		BD64466028204C9D008E7EC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
