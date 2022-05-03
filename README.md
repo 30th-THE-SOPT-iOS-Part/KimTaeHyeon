@@ -9,3 +9,7 @@
 #### 팝업(Pop Up)
 
 <img src = "https://user-images.githubusercontent.com/61109660/166290136-54178510-16dd-4d02-a2b1-f04b8edc38b1.gif" width = 300/>
+
+#### 바텀시트(Static Bottom Sheet)
+
+<img src = "https://user-images.githubusercontent.com/61109660/166417729-1b02d353-2cd4-4c22-84b3-018a924b641b.gif" width = 300/>
