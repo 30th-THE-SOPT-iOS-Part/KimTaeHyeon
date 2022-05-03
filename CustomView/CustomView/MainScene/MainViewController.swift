@@ -46,4 +46,12 @@ extension MainViewController {
     @IBAction func tabPagerButtonDidTap(_ sender: UIButton) {
         print("탭 페이저")
     }
+    
+    @IBAction func dynamicBottomSheetButtonDidTap(_ sender: UIButton) {
+        let dynamicBottomSheet = DynamicBottomSheetViewController(nibName: "DynamicBottomSheetViewController", bundle: nil)
+        dynamicBottomSheet.modalPresentationStyle = .overFullScreen
+        present(dynamicBottomSheet, animated: false) {
+            dynamicBottomSheet.animateContainerHeight(300)
+        }
+    }
 }

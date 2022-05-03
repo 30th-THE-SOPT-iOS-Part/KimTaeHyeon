@@ -19,6 +19,8 @@
 		BD64465B2820360B008E7EC0 /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6446592820360B008E7EC0 /* PopUp.xib */; };
 		BD64465D282036EC008E7EC0 /* TabPager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD64465C282036EC008E7EC0 /* TabPager.storyboard */; };
 		BD64465F282036F8008E7EC0 /* TabPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64465E282036F8008E7EC0 /* TabPagerViewController.swift */; };
+		BD64466428211565008E7EC0 /* DynamicBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64466228211565008E7EC0 /* DynamicBottomSheetViewController.swift */; };
+		BD64466528211565008E7EC0 /* DynamicBottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64466328211565008E7EC0 /* DynamicBottomSheetViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		BD6446592820360B008E7EC0 /* PopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUp.xib; sourceTree = "<group>"; };
 		BD64465C282036EC008E7EC0 /* TabPager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabPager.storyboard; sourceTree = "<group>"; };
 		BD64465E282036F8008E7EC0 /* TabPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPagerViewController.swift; sourceTree = "<group>"; };
+		BD64466228211565008E7EC0 /* DynamicBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBottomSheetViewController.swift; sourceTree = "<group>"; };
+		BD64466328211565008E7EC0 /* DynamicBottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicBottomSheetViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 				BD64464828203513008E7EC0 /* MainScene */,
 				BD64464B28203573008E7EC0 /* PopUp */,
 				BD64464C28203576008E7EC0 /* BottomSheet */,
+				BD64466128211368008E7EC0 /* DynamicBottomSheet */,
 				BD64464D2820357C008E7EC0 /* TabPager */,
 			);
 			path = CustomView;
@@ -126,7 +131,6 @@
 		BD64464C28203576008E7EC0 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				BD64466028204C9D008E7EC0 /* Cells */,
 				BD644652282035F0008E7EC0 /* BottomSheet.swift */,
 				BD644653282035F0008E7EC0 /* BottomSheet.xib */,
 			);
@@ -142,11 +146,13 @@
 			path = TabPager;
 			sourceTree = "<group>";
 		};
-		BD64466028204C9D008E7EC0 /* Cells */ = {
+		BD64466128211368008E7EC0 /* DynamicBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				BD64466228211565008E7EC0 /* DynamicBottomSheetViewController.swift */,
+				BD64466328211565008E7EC0 /* DynamicBottomSheetViewController.xib */,
 			);
-			path = Cells;
+			path = DynamicBottomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +216,7 @@
 				BD64463E282034D7008E7EC0 /* LaunchScreen.storyboard in Resources */,
 				BD64463B282034D7008E7EC0 /* Assets.xcassets in Resources */,
 				BD64465D282036EC008E7EC0 /* TabPager.storyboard in Resources */,
+				BD64466528211565008E7EC0 /* DynamicBottomSheetViewController.xib in Resources */,
 				BD644655282035F0008E7EC0 /* BottomSheet.xib in Resources */,
 				BD64465B2820360B008E7EC0 /* PopUp.xib in Resources */,
 				BD644639282034D6008E7EC0 /* Main.storyboard in Resources */,
@@ -225,6 +232,7 @@
 			files = (
 				BD64464A2820352A008E7EC0 /* MainViewController.swift in Sources */,
 				BD64465A2820360B008E7EC0 /* PopUp.swift in Sources */,
+				BD64466428211565008E7EC0 /* DynamicBottomSheetViewController.swift in Sources */,
 				BD644654282035F0008E7EC0 /* BottomSheet.swift in Sources */,
 				BD644632282034D6008E7EC0 /* AppDelegate.swift in Sources */,
 				BD64465F282036F8008E7EC0 /* TabPagerViewController.swift in Sources */,
