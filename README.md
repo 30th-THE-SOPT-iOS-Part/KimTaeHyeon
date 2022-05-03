@@ -13,3 +13,7 @@
 #### 바텀시트(Static Bottom Sheet)
 
 <img src = "https://user-images.githubusercontent.com/61109660/166417729-1b02d353-2cd4-4c22-84b3-018a924b641b.gif" width = 300/>
+
+#### 동적 바텀시트(Dynamic Bottom Sheet)
+
+<img src = "https://user-images.githubusercontent.com/61109660/166423452-611dc02b-2751-491d-97dc-db547be95be9.gif" width = 300/>
