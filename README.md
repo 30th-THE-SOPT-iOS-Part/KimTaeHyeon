@@ -4,3 +4,8 @@
 > 30기 iOS 파트 화이팅 🎉🎉🎉
 
 
+### 커스텀 뷰 보충 세션
+
+#### 팝업(Pop Up)
+
+<img src = "https://user-images.githubusercontent.com/61109660/166290136-54178510-16dd-4d02-a2b1-f04b8edc38b1.gif" width = 300/>
