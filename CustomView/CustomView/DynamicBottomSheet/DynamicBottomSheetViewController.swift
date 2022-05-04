@@ -24,12 +24,23 @@ class DynamicBottomSheetViewController: UIViewController {
     private let maxDimmedAlpha: CGFloat = 0.6
     private let defaultHeight: CGFloat = 300
     private let dismissibleHeight: CGFloat = 150
-    private let maximumContainerHeight: CGFloat = UIScreen.main.bounds.height - 64
+    private let maximumContainerHeight: CGFloat = UIScreen.main.bounds.height - 200
     private var currentContainerHeight: CGFloat = 300
+    
+    var childViewController: UIViewController
+    
+    init(childViewController: UIViewController) {
+        self.childViewController = childViewController
+        super.init(nibName: String(describing: DynamicBottomSheetViewController.self),
+                   bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
         setupPanGesture()
     }
@@ -39,6 +50,22 @@ class DynamicBottomSheetViewController: UIViewController {
         sheetHeight.constant = 0
         containerView.layer.cornerRadius = 20
         containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        // child vc setup
+        addChild(childViewController)
+        containerView.addSubview(childViewController.view)
+        childViewController.didMove(toParent: self)
+        
+        guard let childSuperView = childViewController.view.superview else { return }
+        
+        NSLayoutConstraint.activate([
+            childViewController.view.bottomAnchor.constraint(equalTo: childSuperView.bottomAnchor),
+            childViewController.view.topAnchor.constraint(equalTo: childSuperView.topAnchor),
+            childViewController.view.leftAnchor.constraint(equalTo: childSuperView.leftAnchor),
+            childViewController.view.rightAnchor.constraint(equalTo: childSuperView.rightAnchor)
+        ])
+        
+        childViewController.view.translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func setupPanGesture() {

@@ -48,8 +48,10 @@ extension MainViewController {
     }
     
     @IBAction func dynamicBottomSheetButtonDidTap(_ sender: UIButton) {
-        let dynamicBottomSheet = DynamicBottomSheetViewController(nibName: "DynamicBottomSheetViewController", bundle: nil)
+        let sheet = CustomBottomSheet(nibName: "CustomBottomSheet", bundle: nil)
+        let dynamicBottomSheet = DynamicBottomSheetViewController(childViewController: sheet)
         dynamicBottomSheet.modalPresentationStyle = .overFullScreen
+        dynamicBottomSheet.modalTransitionStyle = .crossDissolve
         present(dynamicBottomSheet, animated: false) {
             dynamicBottomSheet.animateContainerHeight(300)
         }
