@@ -17,3 +17,7 @@
 #### 동적 바텀시트(Dynamic Bottom Sheet)
 
 <img src = "https://user-images.githubusercontent.com/61109660/166423452-611dc02b-2751-491d-97dc-db547be95be9.gif" width = 300/>
+
+#### 탭 페이저(Tab Pager)
+
+<img src = "https://user-images.githubusercontent.com/61109660/166810423-cd6686da-cee3-40de-8cd0-27cf0c685990.gif" width = 300/>
