@@ -45,6 +45,8 @@ extension MainViewController {
     // MARK: - 탭 페이저
     @IBAction func tabPagerButtonDidTap(_ sender: UIButton) {
         print("탭 페이저")
+        let tabPagerViewController = UIStoryboard(name: "TabPager", bundle: nil).instantiateViewController(withIdentifier: "TabPagerViewController")
+        navigationController?.pushViewController(tabPagerViewController, animated: true)
     }
     
     @IBAction func dynamicBottomSheetButtonDidTap(_ sender: UIButton) {

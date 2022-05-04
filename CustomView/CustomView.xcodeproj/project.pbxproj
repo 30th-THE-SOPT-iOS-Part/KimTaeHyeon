@@ -21,6 +21,9 @@
 		BD64465F282036F8008E7EC0 /* TabPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64465E282036F8008E7EC0 /* TabPagerViewController.swift */; };
 		BD64466428211565008E7EC0 /* DynamicBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD64466228211565008E7EC0 /* DynamicBottomSheetViewController.swift */; };
 		BD64466528211565008E7EC0 /* DynamicBottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD64466328211565008E7EC0 /* DynamicBottomSheetViewController.xib */; };
+		BDBB44952822F1AF00252AF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBB44942822F1AF00252AF9 /* FirstViewController.swift */; };
+		BDBB44972822F1B600252AF9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBB44962822F1B600252AF9 /* SecondViewController.swift */; };
+		BDBB44992822F1BD00252AF9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBB44982822F1BD00252AF9 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		BD64465E282036F8008E7EC0 /* TabPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPagerViewController.swift; sourceTree = "<group>"; };
 		BD64466228211565008E7EC0 /* DynamicBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicBottomSheetViewController.swift; sourceTree = "<group>"; };
 		BD64466328211565008E7EC0 /* DynamicBottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicBottomSheetViewController.xib; sourceTree = "<group>"; };
+		BDBB44942822F1AF00252AF9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BDBB44962822F1B600252AF9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BDBB44982822F1BD00252AF9 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +146,11 @@
 		BD64464D2820357C008E7EC0 /* TabPager */ = {
 			isa = PBXGroup;
 			children = (
-				BD64465E282036F8008E7EC0 /* TabPagerViewController.swift */,
 				BD64465C282036EC008E7EC0 /* TabPager.storyboard */,
+				BD64465E282036F8008E7EC0 /* TabPagerViewController.swift */,
+				BDBB44942822F1AF00252AF9 /* FirstViewController.swift */,
+				BDBB44962822F1B600252AF9 /* SecondViewController.swift */,
+				BDBB44982822F1BD00252AF9 /* ThirdViewController.swift */,
 			);
 			path = TabPager;
 			sourceTree = "<group>";
@@ -232,7 +241,10 @@
 			files = (
 				BD64464A2820352A008E7EC0 /* MainViewController.swift in Sources */,
 				BD64465A2820360B008E7EC0 /* PopUp.swift in Sources */,
+				BDBB44992822F1BD00252AF9 /* ThirdViewController.swift in Sources */,
 				BD64466428211565008E7EC0 /* DynamicBottomSheetViewController.swift in Sources */,
+				BDBB44972822F1B600252AF9 /* SecondViewController.swift in Sources */,
+				BDBB44952822F1AF00252AF9 /* FirstViewController.swift in Sources */,
 				BD644654282035F0008E7EC0 /* BottomSheet.swift in Sources */,
 				BD644632282034D6008E7EC0 /* AppDelegate.swift in Sources */,
 				BD64465F282036F8008E7EC0 /* TabPagerViewController.swift in Sources */,

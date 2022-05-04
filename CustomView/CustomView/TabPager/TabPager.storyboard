@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -12,22 +12,103 @@
         <!--Tab Pager View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="TabPagerViewController" customModule="CustomView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabPagerViewController" id="Y6W-OH-hqX" customClass="TabPagerViewController" customModule="CustomView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXp-Vy-iBX">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9Z-7k-0xn">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tabDidtap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lB4-He-duF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmr-hg-qbE">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tabDidtap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Lhr-Gi-8k5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caR-me-oel">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="tabDidtap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="atU-02-ncf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JNu-BL-L2i"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ld9-fb-enC">
+                                <rect key="frame" x="0.0" y="94" width="375" height="5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZw-3M-qjk">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="5"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="cQM-hA-nG0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstItem="HZw-3M-qjk" firstAttribute="leading" secondItem="ld9-fb-enC" secondAttribute="leading" id="9fi-YU-1Ub"/>
+                                    <constraint firstItem="HZw-3M-qjk" firstAttribute="top" secondItem="ld9-fb-enC" secondAttribute="top" id="dc5-fy-3Pj"/>
+                                    <constraint firstAttribute="height" constant="5" id="dz5-7m-ZZg"/>
+                                    <constraint firstAttribute="bottom" secondItem="HZw-3M-qjk" secondAttribute="bottom" id="teY-IH-ssm"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UI7-Df-Xgn">
+                                <rect key="frame" x="0.0" y="99" width="375" height="679"/>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UI7-Df-Xgn" firstAttribute="top" secondItem="ld9-fb-enC" secondAttribute="bottom" id="2zq-rY-q07"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UI7-Df-Xgn" secondAttribute="trailing" id="3ye-M4-fWf"/>
+                            <constraint firstItem="SXp-Vy-iBX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4uJ-Ye-2Vt"/>
+                            <constraint firstItem="ld9-fb-enC" firstAttribute="top" secondItem="SXp-Vy-iBX" secondAttribute="bottom" id="HQw-se-tRF"/>
+                            <constraint firstItem="ld9-fb-enC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NVk-uR-2yI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ld9-fb-enC" secondAttribute="trailing" id="UeG-9G-gAa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SXp-Vy-iBX" secondAttribute="trailing" id="dHz-Me-mgJ"/>
+                            <constraint firstItem="SXp-Vy-iBX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ifw-rP-88O"/>
+                            <constraint firstItem="UI7-Df-Xgn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qSJ-K4-dRO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="UI7-Df-Xgn" secondAttribute="bottom" id="qf4-rb-WYZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="UI7-Df-Xgn" id="f1z-Pe-i7M"/>
+                        <outlet property="indicatorLeading" destination="9fi-YU-1Ub" id="227-gn-fLn"/>
+                        <outlet property="indicatorView" destination="HZw-3M-qjk" id="lyb-Eg-mDh"/>
+                        <outlet property="indicatorViewWidth" destination="cQM-hA-nG0" id="ycW-Qb-9Fv"/>
+                        <outlet property="tabStackView" destination="SXp-Vy-iBX" id="38h-9R-2Jm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="117"/>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
